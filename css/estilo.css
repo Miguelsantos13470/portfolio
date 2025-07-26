@@ -1,33 +1,30 @@
 /* Definir cores tema Dark */
 :root,
 :root[data-theme="dark"] {
-
---cor-fundo: #504d4d ;
---cor-texto: #ffffff;
---cor-icone:#ffffff ;
---cor-link:gray ;
---cor-hover: ;
---cor-borda:#ffffff ; 
---cor-header:black;
+  --cor-fundo: #504d4d;
+  --cor-texto: #ffffff;
+  --cor-icone: #ffffff;
+  --cor-link: gray;
+  --cor-hover: ;
+  --cor-borda: #ffffff;
+  --cor-header: black;
 }
-
 
 /* Definir cores tem Light */
 
 :root[data-theme="light"] {
-
-    --cor-fundo: #ffffff;
-    --cor-texto: #504d4d ;
-    --cor-icone:black;
-    --cor-link:lightgray;
-    --cor-hover:black ;
-    --cor-borda:#534f4f ;
-    --cor-header:rgb(252, 252, 209) ;
+  --cor-fundo: #ffffff;
+  --cor-texto: #504d4d;
+  --cor-icone: black;
+  --cor-link: lightgray;
+  --cor-hover: black;
+  --cor-borda: #534f4f;
+  --cor-header: rgb(252, 252, 209);
 }
 
-
-
-
+html[data-theme="light"] .logo {
+  filter: invert(1);
+}
 
 * {
   margin: 0;
@@ -47,45 +44,49 @@ a {
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
-#header {  /* ID = # */
+#header {
+  /* ID = # */
   display: flex;
   flex-wrap: row wrap;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background:var(--cor-header);
+  background: var(--cor-header);
   padding: 1rem 1rem;
-/* z-index: ; */
-/* position: ; */
-border-bottom: 2px solid var(--cor-borda);
-/* background: ; */
+  /* z-index: ; */
+  /* position: ; */
+  border-bottom: 2px solid var(--cor-borda);
+  /* background: ; */
 }
 
 .menu-desktop {
-    /* display: none; */
+  /* display: none; */
 }
 
 .menu {
-    display: flex;
-    gap: 1rem; 
-    align-items: center;   
+  display: flex;
+  gap: 1rem;
+  align-items: center;
 }
 
 .menu-link.active .menu-texto,
- .menu-link:hover .menu-texto {
-    color: var(--cor-hover);
+.menu-link:hover .menu-texto {
+  color: var(--cor-hover);
 }
 .menu-texto {
-    color: var(--cor-link);
-    text-transform: uppercase;
+  color: var(--cor-link);
+  text-transform: uppercase;
 }
 
-
+.logo {
+  width: 3.25rem;
+  height: 1.89rem;
+}
 
 #toggleTheme {
-    cursor: pointer;
-    color: var(--cor-icone);
-    font-size: 2rem;   /* tamanhoda fonte */
+  cursor: pointer;
+  color: var(--cor-icone);
+  font-size: 2rem; /* tamanhoda fonte */
 }
