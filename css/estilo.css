@@ -3,7 +3,7 @@
 :root[data-theme="dark"] {
   --cor-fundo: #504d4d;
   --cor-texto: #ffffff;
-  --cor-icone: #ffffff;
+  --cor-icone: orange;
   --cor-link: gray;
   --cor-hover: ;
   --cor-borda: #ffffff;
@@ -62,7 +62,7 @@ ul {
 }
 
 .menu-desktop {
-  /* display: none; */
+  display: none;
 }
 
 .menu {
@@ -85,8 +85,32 @@ ul {
   height: 1.89rem;
 }
 
+.header-toggle {
+    display: flex;
+    align-items:center;
+    justify-content: flex-end;
+}
+
+
+
+
+
+
+
 #toggleTheme {
   cursor: pointer;
   color: var(--cor-icone);
   font-size: 2rem; /* tamanhoda fonte */
 }
+@media (min-width: 768px) {
+
+    .menu-desktop {
+        display: flex;
+        min-width: 30%;}
+        .header-toggle {
+            min-width: 30%;}
+    
+
+
+}
+
