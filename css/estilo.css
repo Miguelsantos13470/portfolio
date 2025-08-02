@@ -81,6 +81,10 @@ ul {
 .menu-link:hover .menu-texto {
   color: var(--cor-hover);
 }
+.social-icon {
+  color: var(--cor-texto);
+  font-size: 1,5rem;
+}
 
 .menu-texto {
   color: var(--cor-link);
