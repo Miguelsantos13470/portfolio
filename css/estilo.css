@@ -78,6 +78,8 @@ ul {
 .menu-texto {
   color: var(--cor-link);
   text-transform: uppercase;
+font-size: .75rem;
+font-weight: 600;
 }
 
 .logo {
@@ -92,16 +94,18 @@ ul {
 }
 
 
-
-
-
-
-
 #toggleTheme {
   cursor: pointer;
   color: var(--cor-icone);
   font-size: 2rem; /* tamanhoda fonte */
+  transition: all 0.3s ease-in-out;
 }
+
+/* menu mobile */
+
+
+
+
 @media (min-width: 768px) {
 
     .menu-desktop {
