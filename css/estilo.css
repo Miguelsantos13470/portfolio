@@ -79,7 +79,8 @@ ul {
 
 h1 {
   font-weight: 900; /* espessura da fonte */
-  font-size: 5, 10rem;
+  font-size: 2.5rem;
+  font-style: italic;
 }
 
 h1,
@@ -88,12 +89,14 @@ h3 {
   font-family: var(--fonte-titulo);
   text-transform: uppercase;
   color: var(--cor-titulo);
-  font-weight: 100;
+  font-weight: 200;
+
 }
 
 strong {
-  font-weight: 800;
-  /* color: var(); */
+  font-weight: 400;
+  color: var(--cor-icone);
+  font-style: normal;
 }
 
 P,
@@ -176,6 +179,10 @@ li {
   font-size: 1.8rem;
   padding: 0.5rem;
   margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 /* Menu mobile (estilo e animação) */
@@ -224,12 +231,54 @@ menu-mobile .menu-list {
   gap: 1.5rem;
 }
 
-.main-content .video {
+.menu.social {
+  gap: 1.2rem;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  border: none;
+  color: var(--cor-texto);
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1rem;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+  gap: 0, 625rem;
+}
+
+.btn-primario {
+  border: 1px solid var(--cor-texto);
+}
+
+.btn:hover {
+  transform: scale(1.025);
+  transition: ease-in-out 0.3s;
+  background: var(--cor-header)
+}
+
+.btn span,
+.btn i {
+ text-transform: uppercase;
+
+}
+
+.btn:hover span,
+.btn:hover i {
+  color: var(--cor-texto);
+  transition: ease-in-out 0.3s;
+}
+
+
+/* .main-content .video {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
+ */
 .video {
   display: flex;
   justify-content: center;
@@ -257,6 +306,12 @@ menu-mobile .menu-list {
 
 @media (min-width: 768px) {
   /* A partir de 780px ao infinito */
+  #header,
+  .projetos,
+  .sobre,
+  .contato {
+    padding: 1rem 6rem;
+  }
 
   .menu-desktop {
     display: flex;
@@ -280,9 +335,29 @@ menu-mobile .menu-list {
 .projetos .sobre {
   padding: 8rem 6rem 4rem 6rem;
 }
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+h1 {
+  font-size: 5rem;
+}
 
 @media (min-width: 1200px) {
   #home {
     padding: 6rem 6rem 2rem;
+  }
+}
+.main-content .btn {
+  width: auto;
+  margin: auto;
+}
+
+
+
+@media (min-width: 1400px) {
+  h1 {
+    font-size: 4rem;
   }
 }
