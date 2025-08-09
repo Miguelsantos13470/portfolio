@@ -1,3 +1,25 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Castoro:ital@0;1&family=Nata+Sans:wght@100..900&display=swap");
+/*
+
+ font-family: "Castoro", serif;
+  font-weight: 400;
+  font-style: normal;
+
+  font-family: "Castoro Titling", serif;
+  font-weight: 400;
+  font-style: normal;
+
+   font-family: "Nata Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+*/
+:root {
+  --fonte-subtitulo: "Castoro", sans-serif;
+  --fonte-titulo: "Castoro Titling", sans-serif;
+  --fonte-corpo: "Nata Sans", sans-serif;
+}
+
 /* Definir cores tema Dark */
 :root,
 :root[data-theme="dark"] {
@@ -11,8 +33,7 @@
   --cor-icon-mobile: #fff;
 }
 
-
-/* Definir cores tem Light */
+/* Definir cores tema Light */
 
 :root[data-theme="light"] {
   --cor-fundo: #ffffff;
@@ -38,19 +59,25 @@ html[data-theme="light"] .logo {
 body {
   background: var(--cor-fundo);
   /* Cor Fundo */
-  color: #ffffff;
+  color: var(--cor-texto);
   /*cor Texto */
   /* font-family: ; */
 }
 
 a {
   text-decoration: none;
-  color: #ffffff;
+  color: var(--cor-link);
 }
 
 ul {
   list-style: none;
 }
+
+h1 {
+  font-weight: 200;
+  font-size: 2,5rem;
+}
+
 
 #header {
   /* ID = # */
@@ -64,7 +91,6 @@ ul {
   z-index: 100;
   position: fixed;
   border-bottom: 2px solid var(--cor-borda);
-
 }
 
 .menu-desktop {
@@ -83,14 +109,16 @@ ul {
 }
 .social-icon {
   color: var(--cor-texto);
-  font-size: 1,5rem;
+  font-size: 1, 5rem;
 }
 
 .menu-texto {
-  color: var(--cor-link);
+  color: var(--cor-texto);
   text-transform: uppercase;
-  font-size: .75rem;
+  font-size: 0.75rem;
   font-weight: 600;
+  font-family: var(--fonte-corpo, sans-serif);
+  text-rendering: optimizeLegibility;
 }
 
 .logo {
@@ -103,7 +131,6 @@ ul {
   align-items: center;
   justify-content: flex-end;
 }
-
 
 #toggleTheme {
   cursor: pointer;
@@ -126,7 +153,6 @@ ul {
   font-size: 1.8rem;
   padding: 0.5rem;
   margin-left: 1rem;
-
 }
 
 /* Menu mobile (estilo e animação) */
@@ -161,8 +187,38 @@ menu-mobile .menu-list {
   display: inline-block;
   font-size: 1rem;
   padding: 0.3rem 0;
-
 }
+
+#home {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.main-content .video {
+  display: flex;
+  align-items:center ;
+  justify-content: center;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video iframe {
+  width: 70%;
+  aspect-ratio: 16/9;
+}
+
+
 
 
 /* medidas responsivas */
@@ -182,7 +238,7 @@ menu-mobile .menu-list {
 
   .btn-menu-mobile {
     display: none;
-}
+  }
 }
 #home {
   padding-top: 6rem;
