@@ -1,0 +1,12 @@
+{
+    //Aparencia e Interface
+    "editor.fontSize": 24,
+    "editor.formatOnSave": true,
+    "editor.glyphMargin": false,
+    "editor.wordWrap": "on",
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 1000,
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "workbench.iconTheme": "vscode-icons"
+}
