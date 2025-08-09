@@ -25,12 +25,14 @@
 :root[data-theme="dark"] {
   --cor-fundo: #504d4d;
   --cor-texto: #ffffff;
+
   --cor-icone: orange;
+  --cor-icon-mobile: #fff;
+
   --cor-link: gray;
   --cor-hover: ;
   --cor-borda: #fff;
   --cor-header: black;
-  --cor-icon-mobile: #fff;
 }
 
 /* Definir cores tema Light */
@@ -38,12 +40,14 @@
 :root[data-theme="light"] {
   --cor-fundo: #ffffff;
   --cor-texto: #313030;
+
   --cor-icone: rgb(114, 114, 240);
+  --cor-icon-mobile: black;
+
   --cor-link: lightgray;
   --cor-hover: black;
   --cor-borda: #000;
   --cor-header: rgb(252, 252, 209);
-  --cor-icon-mobile: black;
 }
 
 html[data-theme="light"] .logo {
@@ -74,10 +78,29 @@ ul {
 }
 
 h1 {
-  font-weight: 200;
-  font-size: 2,5rem;
+  font-weight: 900; /* espessura da fonte */
+  font-size: 5, 10rem;
 }
 
+h1,
+h2,
+h3 {
+  font-family: var(--fonte-titulo);
+  text-transform: uppercase;
+  color: var(--cor-titulo);
+  font-weight: 100;
+}
+
+strong {
+  font-weight: 800;
+  /* color: var(); */
+}
+
+P,
+span,
+li {
+  font-size: 1rem;
+}
 
 #header {
   /* ID = # */
@@ -203,7 +226,7 @@ menu-mobile .menu-list {
 
 .main-content .video {
   display: flex;
-  align-items:center ;
+  align-items: center;
   justify-content: center;
 }
 
@@ -218,10 +241,19 @@ menu-mobile .menu-list {
   aspect-ratio: 16/9;
 }
 
-
-
+#home,
+.projetos,
+.sobre,
+.contato {
+  padding: 2.5rem 1rem;
+}
 
 /* medidas responsivas */
+@media (max-width: 768px) {
+  #home {
+    padding-top: 6rem;
+  }
+}
 
 @media (min-width: 768px) {
   /* A partir de 780px ao infinito */
@@ -242,4 +274,15 @@ menu-mobile .menu-list {
 }
 #home {
   padding-top: 6rem;
+}
+
+#home,
+.projetos .sobre {
+  padding: 8rem 6rem 4rem 6rem;
+}
+
+@media (min-width: 1200px) {
+  #home {
+    padding: 6rem 6rem 2rem;
+  }
 }
