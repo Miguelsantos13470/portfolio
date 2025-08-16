@@ -331,6 +331,12 @@ p {
   letter-spacing: normal;
 }
 
+.projetos {
+  margin-top: 1rem;
+  border: 1px solid;
+  width: 100%;
+}
+
 /* Medidas Responsivas */
 
 @media (max-width: 768px) {
@@ -380,10 +386,9 @@ p {
     font-size: 5rem;
   }
 
-
-h2 {
-  font-size: 3rem;
-}
+  h2 {
+    font-size: 3rem;
+  }
 }
 @media (min-width: 1200px) {
   #home {
@@ -393,10 +398,9 @@ h2 {
     width: auto;
   }
 
-
-h2 {
-  font-size: 4rem;
-}
+  h2 {
+    font-size: 4rem;
+  }
 }
 
 @media (min-width: 1400px) {
