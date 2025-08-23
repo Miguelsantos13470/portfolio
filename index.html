@@ -18,135 +18,391 @@
     <!-- Menu Desktop -->
     <nav class="menu-desktop">
       <ul class="menu menu-principal">
-        <li class="menu-itens">
+        <li class="menu-item">
           <a href="#home" class="menu-link active">
             <span class="menu-texto"> home</span>
           </a>
         </li>
-        <li class="menu-itens">
+        <li class="menu-item">
           <a href="#projetos" class="menu-link">
-            <span class="menu-texto">projetos</span>
+            <span class="menu-texto">Projeto</span>
           </a>
         </li>
-        <li class="menu-itens">
+        <li class="menu-item">
           <a href="#sobre" class="menu-link">
-            <span class="menu-texto">sobre</span>
+            <span class="menu-texto">Sobre </span>
           </a>
         </li>
-        <li class="menu-itens">
+        <li class="menu-item">
           <a href="#contato" class="menu-link">
-            <span class="menu-texto">contato</span>
+            <span class="menu-texto">Contato</span>
           </a>
         </li>
       </ul>
     </nav>
     <div class="header-logo">
       <a href="#home">
-        <img src="Img/Logo MS.svg" alt="" class="logo" />
+        <img src="img/Logo MS.svg" alt="" class="logo" />
       </a>
     </div>
-    <div class="header-toggle">
-      <i id="toggleTheme" class="bi bi-sun"> </i>
-      <button id="menuHamburger" class="btn-menu-mobile">
-        <i class="bi bi-list"> </i>
-      </button>
 
+    <div class="header-toggle">
+      <i id="toggleTheme" class="bi bi-sun"></i>
+      <button id="menuHamburger" class="btn-menu-mobile">
+        <i class="bi bi-list"></i> <!-- b significa botão e o i significa icone -->
+      </button>
     </div>
+
   </header>
 
-
-  <!-- menu mobile -->
-
-  <nav id="menuMobile" class="menu menu-principal menu-mobile">
-
+  <!-- Menu Mobile -->
+  <nav id="menuMobile" class=" menu menu-principal menu-mobile">
     <ul class="menu-lista">
-      <li class="menu-itens">
+      <li class="menu-item">
         <a href="#home" class="menu-link active">
           <span class="menu-texto"> home</span>
         </a>
       </li>
-      <li class="menu-itens">
-        <a href="#projetos" class="menu-link">
-          <span class="menu-texto">projetos</span>
+      <li class="menu-item">
+        <span class="menu-texto">Projeto</span>
         </a>
       </li>
-      <li class="menu-itens">
+      <li class="menu-item">
         <a href="#sobre" class="menu-link">
-          <span class="menu-texto">sobre</span>
+          <span class="menu-texto">Sobre </span>
         </a>
       </li>
-      <li class="menu-itens">
+      <li class="menu-item">
         <a href="#contato" class="menu-link">
-          <span class="menu-texto">contato</span>
-        </a>
-      </li>
+          <span class="menu-texto">Contato</span>
 
-    </ul>
+    </ul> <!-- fim menusocial -->
 
   </nav>
-
-
 
   <!-- Principal -->
   <main id="home">
     <div class="main-content">
       <h1>
-        <strong>Soluções criativas &</strong> desenvolvimento front-end
+        <!-- strong serve para dar enfase/negrito naquele trecho do texto. No css vc coloca os variações -->
+        <strong>Soluções criativas &</strong> Desenvolvimento Front-end
       </h1>
-
-      <P>
-        Miguel Rodrigues, São Paulo, estudante.
-      </P>
-      <p>
-      </p>
-
+      <p>Miguel Rodrigues, São Paulo/SP, estudante</p>
       <ul class="menu menu-social">
         <li>
-          <a href="menu-link" target="_blank">
-            <i class="bi bi-instagram social-icon"></i>
-          </a>
-        </li>
-
-        <li>
-          <a href="menu-link" target="_blank">
-            <i class="bi bi-twitter-x social-icon"></i>
+          <a href="https://github.com/Miguelsantos13470" class="menu-link" target="_blank">
+            <!-- target "_blank" serve para abrir o link em outra guia, para que o seu continue sendo visualizado-->
+            <i class="bi bi-github" social-icon></i>
           </a>
         </li>
         <li>
-          <a href="https://github.com/Miguelsantos13470" target="_blank">
-            <i class="bi bi-github social-icon"></i>
+          <a href="https://x.com/i/flow/login?lang=pt" class="menu-link" target="_blank">
+            <i class="bi bi-twitter-x" social-icon></i>
           </a>
         </li>
-      </ul><!-- Fim do social -->
+        <li>
+          <a href="https://www.instagram.com/" class="menu-link" target="_blank">
+            <i class="bi bi-instagram" social-icon></i>
+          </a>
+        </li>
+      </ul>
+    </div>
 
-    </div><!-- Fim main-content -->
+    <a href="#projetos">
+      <button class="btn btn-primario">
+        <span>ver projetos</span>
+        <i class="bi bi-arrow-down-right"></i>
+      </button>
+    </a>
+
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/XaJF50CPhzk"
+        title="Aprenda a pensar em HTML - Curso de HTML e CSS - Aula 8" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    </div>
+
   </main>
 
-<a href="#projetos">
-        <button class="btn btn-primario">
-          <span> Ver projetos</span>
-          <i class="bi bi-arrow" >
-<i class="bi bi-arrow-down-right"></i>
-          </i>
-
-        </button>
-      </a>
-
-
-
-  <div class="video" >
-<iframe src="https://www.youtube.com/embed/BcIfsng1O1A" title="NIKE 2014 - Neymar x Cristiano Ronaldo; Rooney x Ibrahimovic..." frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  </div>
-
-
-
-
-  <section class="X1 monstro">
+  <section class="conhecimento">
     <h2>
-    Estudo de extrema importancia!
+      Conhecimento do jogo mais jogado no momento.
     </h2>
-
   </section>
+
+  <section id="projetos" class="projetos">
+    <h2>Projeto</h2>
+
+    <!-- Estrutura para os Projetos -->
+    <div class="projetos-container">
+
+
+      <!-- Projeto / Card 1 -->
+      <article class="projeto-card">
+        <img src="IMG/projetos/aura.jpg" alt="" class="card-cover">
+
+        <div class="card-body">
+
+          <h3 class="card-title"> Sakuna, The Strongest in History</h3>
+          <p class="card-description">the only global boss in the game elden cats..</p>
+
+          <ul class="card-lista">
+
+            <li class="card-title-item">
+              <i> </i>
+              Powers:
+            </li>
+
+            <li class="card-item">
+              <i> </i>
+              Shrine
+            </li>
+
+            <li class="card-item">
+              <i> </i>
+              Dismantle
+            </li>
+
+            <li class="card-item">
+              <i> </i>
+              Cleave
+            </li>
+
+            <li class="card-item">
+              <i> </i>
+              Spiderweb
+            </li>
+
+            <li class="card-item">
+              <i> </i>
+              Divine Flame
+            </li>
+
+            <li class="card-title-item">
+              <i> </i>
+              invocations:
+            </li>
+
+            <li class="card-item">
+              <i> </i>
+              Divine Dogs
+            </li>
+
+            <li class="card-item">
+              <i> </i>
+              Divine Dog Totality
+            </li>
+
+            <li class="card-item">
+              <i> </i>
+              Nue
+            </li>
+
+            <li class="card-item">
+              <i> </i>
+              Max Elephant
+            </li>
+
+            <li class="card-item">
+              <i> </i>
+              Round Deer
+            </li>
+
+            <li class="card-item">
+              <i> </i>
+              Mahoraga
+            </li>
+
+            <li class="card-item">
+              <i> </i>
+              Beasts Merged
+            </li>
+
+            <li class="card-title-item">
+              <i> </i>
+              Passive:
+            </li>
+
+            <li class="card-item">
+              <i> </i>
+              Unique Body Structure
+            </li>
+
+            <li class="card-item">
+              <i> </i>
+              Hollow Wicker
+            </li>
+
+            <li class="card-title-item">
+              <i> </i>
+              Ult:
+            </li>
+
+            <li class="card-item">
+              <i> </i>
+              Domain Expansion: Malevolent Shrine
+            </li>
+          </ul>
+
+
+          <div class="card-button">
+            <button class="btn btn-primario">
+              <a href="Link-Sakuna" target="_blank">
+                <span>Saber Mais</span>
+                <i> </i>
+              </a>
+
+            </button>
+          </div>
+
+        </div> <!-- Fim Card Body -->
+
+      </article>
+
+
+      <!-- Projeto / Card 2 -->
+      <article class="projeto-card card-reverse">
+        <img src="IMG/projetos/gojo-cat.jpg" alt="" class="card-cover">
+
+        <div class="card-body">
+
+          <h3 class="card-title"> gojo, the strongest of today</h3>
+          <p class="card-description">a very difficult boss in the game elden cats.</p>
+
+          <ul class="card-lista">
+
+            <li class="card-title-item">
+              <i> </i>
+              Powers:
+            </li>
+
+            <li class="card-item">
+              <i> </i>
+              Lapse Blue
+            </li>
+
+            <li class="card-item">
+              <i> </i>
+              Lapse Maximum Blue
+            </li>
+
+            <li class="card-item">
+              <i> </i>
+              Reversal Red
+            </li>
+
+            <li class="card-item">
+              <i> </i>
+              Hollow Purple
+            </li>
+
+            <li class="card-title-item">
+              <i> </i>
+              Passive:
+            </li>
+
+            <li class="card-item">
+              <i> </i>
+              Six eyes
+            </li>
+
+            <li class="card-title-item">
+              <i> </i>
+              Ult:
+            </li>
+
+            <li class="card-item">
+              <i> </i>
+               Domain Expansion: Unlimited Void
+            </li>
+          </ul>
+
+
+          <div class="card-button">
+            <button class="btn btn-primario">
+              <a href="Link-Gojo" target="_blank">
+                <span>Saber Mais</span>
+              </a>
+
+            </button>
+
+          </div>
+
+        </div><!-- Fim Card Body -->
+
+
+      </article>
+
+      <!-- Projeto / Card 3 -->
+      <article class="projeto-card ">
+        <img src="IMG/projetos/cat.jpg" alt="" class="card-cover">
+
+        <div class="card-body">
+
+          <h3 class="card-title"> Itadori, blessed by the black flash</h3>
+          <p class="card-description">a very difficult boss in the game elden cats.</p>
+
+          <ul class="card-lista">
+
+            <li class="card-title-item">
+              <i> </i>
+              Powers:
+            </li>
+
+            <li class="card-item">
+              <i> </i>
+              Blood Manipulation
+            </li>
+
+            <li class="card-item">
+              <i> </i>
+              Convergence
+            </li>
+
+            <li class="card-item">
+              <i> </i>
+              Piercing Blood
+            </li>
+
+            <li class="card-item">
+              <i> </i>
+              Shrine
+            </li>
+
+            <li class="card-item">
+              <i> </i>
+              Dismantle
+            </li>
+
+            <li class="card-title-item">
+              <i> </i>
+              Ult:
+            </li>
+
+            <li class="card-item">
+              <i> </i>
+              Domain Expansion: Hometown Domain
+            </li>
+
+            <div class="card-button">
+            <button class="btn btn-primario">
+              <a href="Link-Itadori" target="_blank">
+                <span>Saber Mais</span>
+              </a>
+
+            </button>
+
+          </div>
+
+      </article>
+    </div>
+  </section>
+
+
+
+
+
 
   <footer></footer>
   <script src="js/script.js"></script>
