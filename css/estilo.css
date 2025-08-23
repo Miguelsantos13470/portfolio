@@ -21,7 +21,7 @@ League Spartan:
   --cor-fundo: rgb(70, 68, 68);
   --cor-fundo-secundaria: #28292e;
 
-  --cor-texto: #8f8f8f;
+  --cor-texto: #cdd4e9;
 
   --cor-icone: #ffa927;
 
@@ -104,7 +104,9 @@ h2 {
 h3 {
    font-size: 1.55rem;
 }
-
+h4 {
+  font-family: var(--fonte-corpo);
+}
 
 h1,
 h2,
@@ -440,18 +442,88 @@ gap: 2rem;
   border: 5px solid var(--cor-borda);
 }
 
-/* .sobre-description {}
+.sobre-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap:1.5rem;
+}
 
-.sobre-icones {}
+.sobre-description p {
+  color: var(--cor-titulo);
+  font-size: 1.4rem;
+}
 
-.sobre-icones i {} */
+.sobre-icones {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.sobre-icones i {
+  font-size: 1.25rem;
+  color: var(--cor-hover);
+  transition: all .3s ease-in-out;
+}
+
 
 .sobre-content2 .col1,
 .sobre-content2 .col2 {
    display: flex;
    flex-direction: column;
    text-align: justify;
-   gap: 5rem;
+   gap: 1rem;
+}
+
+.sobre-content2 .col1 .row1,
+.sobre-content2 .col1 .row2 {
+   display: flex;
+   flex-direction: column;
+   text-align: justify;
+   gap: 0.7rem;
+}
+
+/* accordion FAQ */
+
+.accordion {
+  display: inline-block;
+  width: 100%;
+}
+.accordion-header {
+  display: flex;
+  width: 100%;
+  padding: .75rem 1rem;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  text-align: start;
+  border: 1px solid var(--cor-borda);
+  cursor: pointer;
+  color: var(--cor-texto);
+}
+
+.accordion-header:hover {
+  background: var(--cor-fundo-secundaria);
+  transition: all .3s ease-in-out;
+}
+
+.accordion-body {
+  display: none;
+  padding: 1.25rem;
+  color: var(--cor-titulo);
+  border: 1px solid var(--cor-borda);
+  gap: .6rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+.accordion-item.active .accordion-body {
+  display: flex;
+}
+
+.accordion-item.active .bi-caret-down-fill {
+transform: rotate(180deg); /* 180 graus */
+transition: all .3s ease-in-out;
 }
 /* Medidas Responsivas */
 
@@ -532,6 +604,11 @@ gap: 2rem;
   justify-content: flex-start;
   align-items: flex-start;
   gap: 4rem;
+}
+
+.card-button .btn,
+.discription-button .bnt {
+  width: auto;
 }
 
 }
