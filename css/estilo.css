@@ -291,6 +291,7 @@ span {
 
 .btn-primario {
   border: 1px solid var(--cor-titulo);
+  background-color: transparent;
 }
 .btn:hover {
   transform: scale(1.02);
@@ -581,6 +582,42 @@ transition: all .3s ease-in-out;
   border-radius: .75rem;
 }
 
+.form-contato {
+  line-height: 1.5;
+}
+
+.form-contato button {
+  align-items: center;
+  align-self: flex-start;
+  display: flex;
+  gap: 0.6rem;
+  border-radius: .5rem;
+  height:2rem;
+  width: 5rem;
+}
+
+footer p{
+    font-size: .85rem;
+    text-align: center;
+    padding: 1rem;
+
+}
+
+footer i {
+  font-size: 1rem;
+  color: orange;
+}
+
+.footer-link {
+  color: var(--cor-texto);
+}
+
+.footer-link:hover {
+  color: var(--cor-titulo);
+}
+
+
+
 
 /* Medidas Responsivas */
 
@@ -595,6 +632,8 @@ transition: all .3s ease-in-out;
   text-align: center;
   display: flex;
 }
+
+
 
 @media (min-width: 768px) {
   /* A partir de 768px ate o infinito */
