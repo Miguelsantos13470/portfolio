@@ -106,6 +106,7 @@ h3 {
 }
 h4 {
   font-family: var(--fonte-corpo);
+  color:var(--cor-titulo);
 }
 
 h1,
@@ -130,10 +131,13 @@ li {
 p {
   text-align: justify;
   font-family: var(--fonte-corpo);
+  margin-left: 1rem;
+
 }
 
 span {
   font-family: var(--fonte-menu);
+  color: var(--cor-titulo);
 }
 
 #header {
@@ -534,6 +538,11 @@ transition: all .3s ease-in-out;
   }
 }
 
+.sub-description {
+  text-align: center;
+  display: flex;
+}
+
 @media (min-width: 768px) {
   /* A partir de 768px ate o infinito */
   #header,
@@ -657,3 +666,4 @@ color: red;
 .bi.bi-hand-thumbs-up-fill {
   color: green;
 }
+
